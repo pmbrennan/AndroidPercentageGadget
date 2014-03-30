@@ -1,5 +1,8 @@
 package net.pbrennan.AndroidPercentageGadget;
 
+import android.animation.AnimatorSet;
+import android.animation.FloatEvaluator;
+import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +10,8 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -182,24 +187,30 @@ public class AndroidPercentageGadget
      */
 	private void FixResultIndicator()
 	{
+        TextView targetedView = (TextView)findViewById(m_targetedField);
+        addAnimation(targetedView);
+
 		ImageView percentLight = (ImageView)findViewById(R.id.PercentTargeted);
 		ImageView valueLight = (ImageView)findViewById(R.id.ValueTargeted);
 		ImageView productLight = (ImageView)findViewById(R.id.ProductTargeted);
 		
-		if (m_targetedField == R.id.PercentField)
-			percentLight.setImageResource(R.drawable.active);
-		else
-			percentLight.setImageResource(R.drawable.inactive);
+		if (m_targetedField == R.id.PercentField) {
+            percentLight.setImageResource(R.drawable.active);
+        } else {
+            percentLight.setImageResource(R.drawable.inactive);
+        }
 		
-		if (m_targetedField == R.id.ValueField)
-			valueLight.setImageResource(R.drawable.active);
-		else
-			valueLight.setImageResource(R.drawable.inactive);
+		if (m_targetedField == R.id.ValueField) {
+            valueLight.setImageResource(R.drawable.active);
+        } else {
+            valueLight.setImageResource(R.drawable.inactive);
+        }
 		
-		if (m_targetedField == R.id.ProductField)
-			productLight.setImageResource(R.drawable.active);
-		else
-			productLight.setImageResource(R.drawable.inactive);
+		if (m_targetedField == R.id.ProductField) {
+            productLight.setImageResource(R.drawable.active);
+        } else {
+            productLight.setImageResource(R.drawable.inactive);
+        }
 	}
 
     /**
@@ -335,4 +346,48 @@ public class AndroidPercentageGadget
 			return super.onOptionsItemSelected(item);
 		}
 	}
+
+    private void addAnimation(View v) {
+        AnimatorSet set = new AnimatorSet();
+
+        if (v == null) {
+            return;
+        }
+
+        FloatEvaluator eval = new FloatEvaluator() {
+            /**
+             * This function returns the result of linearly interpolating the start and end values, with
+             * <code>fraction</code> representing the proportion between the start and end values. The
+             * calculation is a simple parametric calculation: <code>result = x0 + t * (v1 - v0)</code>,
+             * where <code>x0</code> is <code>startValue</code>, <code>x1</code> is <code>endValue</code>,
+             * and <code>t</code> is <code>fraction</code>.
+             *
+             * @param fraction   The fraction from the starting to the ending values
+             * @param startValue The start value; should be of type <code>float</code> or
+             *                   <code>Float</code>
+             * @param endValue   The end value; should be of type <code>float</code> or <code>Float</code>
+             * @return A linear interpolation between the start and end values, given the
+             * <code>fraction</code> parameter.
+             */
+            @Override
+            public Float evaluate(float fraction, Number startValue, Number endValue) {
+                //return super.evaluate(fraction, startValue, endValue);
+                double sine = Math.sin(Math.PI * fraction) * 0.2;
+                return Float.valueOf((float)(startValue.floatValue() * (1.0 + sine)));
+            }
+        };
+
+        ObjectAnimator animator1 = ObjectAnimator.ofFloat(v, "scaleX", 1f, 1f);
+        animator1.setInterpolator(new LinearInterpolator());
+        animator1.setEvaluator(eval);
+        animator1.setDuration(250);
+
+        ObjectAnimator animator2 = ObjectAnimator.ofFloat(v, "scaleY", 1f, 1f);
+        animator2.setInterpolator(new LinearInterpolator());
+        animator2.setEvaluator(eval);
+        animator2.setDuration(250);
+
+        set.playTogether(animator1, animator2);
+        set.start();
+    }
 }
