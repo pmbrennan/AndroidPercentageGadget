@@ -1,0 +1,41 @@
+net.pbrennan.AndroidPercentageGadget.About
+net.pbrennan.AndroidPercentageGadget.About: About()
+net.pbrennan.AndroidPercentageGadget.About: void onClick(android.view.View)
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget: AndroidPercentageGadget()
+net.pbrennan.AndroidPercentageGadget.Help
+net.pbrennan.AndroidPercentageGadget.Help: Help()
+net.pbrennan.AndroidPercentageGadget.Help: void onClick(android.view.View)
+net.pbrennan.AndroidPercentageGadget.R$animator: int gadget_animator
+net.pbrennan.AndroidPercentageGadget.R$drawable: int active
+net.pbrennan.AndroidPercentageGadget.R$drawable: int ic_launcher
+net.pbrennan.AndroidPercentageGadget.R$drawable: int icon
+net.pbrennan.AndroidPercentageGadget.R$drawable: int inactive
+net.pbrennan.AndroidPercentageGadget.R$id: int AboutLabel
+net.pbrennan.AndroidPercentageGadget.R$id: int ButtonOK
+net.pbrennan.AndroidPercentageGadget.R$id: int ExplanationLabel
+net.pbrennan.AndroidPercentageGadget.R$id: int HelpLabel
+net.pbrennan.AndroidPercentageGadget.R$id: int Label_number_entry
+net.pbrennan.AndroidPercentageGadget.R$id: int Label_number_product
+net.pbrennan.AndroidPercentageGadget.R$id: int Label_percent_entry
+net.pbrennan.AndroidPercentageGadget.R$id: int PercentField
+net.pbrennan.AndroidPercentageGadget.R$id: int ProductField
+net.pbrennan.AndroidPercentageGadget.R$id: int TableLayout_entryFields
+net.pbrennan.AndroidPercentageGadget.R$id: int TableRow_numberEntry
+net.pbrennan.AndroidPercentageGadget.R$id: int TableRow_percent_entry
+net.pbrennan.AndroidPercentageGadget.R$id: int TableRow_product_entry
+net.pbrennan.AndroidPercentageGadget.R$id: int ValueField
+net.pbrennan.AndroidPercentageGadget.R$layout: int about
+net.pbrennan.AndroidPercentageGadget.R$layout: int help
+net.pbrennan.AndroidPercentageGadget.R$layout: int main
+net.pbrennan.AndroidPercentageGadget.R$string: int AboutLabelText
+net.pbrennan.AndroidPercentageGadget.R$string: int AboutText
+net.pbrennan.AndroidPercentageGadget.R$string: int AboutThisApp
+net.pbrennan.AndroidPercentageGadget.R$string: int Explanation
+net.pbrennan.AndroidPercentageGadget.R$string: int HelpLabelText
+net.pbrennan.AndroidPercentageGadget.R$string: int HelpMe
+net.pbrennan.AndroidPercentageGadget.R$string: int LongerExplanation
+net.pbrennan.AndroidPercentageGadget.R$string: int app_name
+net.pbrennan.AndroidPercentageGadget.R$string: int equals
+net.pbrennan.AndroidPercentageGadget.R$string: int of
+net.pbrennan.AndroidPercentageGadget.R$string: int percentage_of

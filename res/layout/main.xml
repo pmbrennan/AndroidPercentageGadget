@@ -28,14 +28,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/PercentTargeted"
-                    android:src="@drawable/inactive"
-                    android:clickable="false"
-                    android:longClickable="false"/>
-
             <EditText
                     android:layout_height="wrap_content"
                     android:bufferType="editable"
@@ -44,15 +36,17 @@
                     android:numeric="signed|decimal"
                     android:ems="8"
                     android:editable="true"
-                    android:layout_width="wrap_content"
-                    android:id="@+id/PercentField"/>
+                    android:layout_width="0dp"
+                    android:id="@+id/PercentField"
+                    android:layout_weight="4"/>
 
             <TextView
                     android:id="@+id/Label_percent_entry"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/percentage_of"/>
+                    android:text="@string/percentage_of"
+                    android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -60,16 +54,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/TableRow_numberEntry">
 
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/inactive"
-                    android:id="@+id/ValueTargeted"
-                    android:clickable="false"
-                    android:longClickable="false"></ImageView>
-
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:bufferType="editable"
                     android:clickable="true"
@@ -77,14 +63,16 @@
                     android:numeric="signed|decimal"
                     android:ems="8"
                     android:editable="true"
-                    android:id="@+id/ValueField"></EditText>
+                    android:id="@+id/ValueField"
+                    android:layout_weight="4"/>
 
             <TextView
                     android:id="@+id/Label_number_entry"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
-                    android:text="@string/equals"></TextView>
+                    android:text="@string/equals"
+                    android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -92,16 +80,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/TableRow_product_entry">
 
-            <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/inactive"
-                    android:id="@+id/ProductTargeted"
-                    android:clickable="false"
-                    android:longClickable="false"></ImageView>
-
             <EditText
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:bufferType="editable"
                     android:clickable="true"
@@ -109,7 +89,15 @@
                     android:numeric="signed|decimal"
                     android:ems="8"
                     android:editable="true"
-                    android:id="@+id/ProductField"></EditText>
+                    android:id="@+id/ProductField"
+                    android:layout_weight="4"/>
+
+            <TextView
+                    android:id="@+id/Label_number_product"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_weight="1"/>
         </TableRow>
 
     </TableLayout>

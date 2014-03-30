@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>    
-    <string name="app_name">PercentageGadget</string>
+    <string name="app_name">Percentage Gadget</string>
     <string name="percentage_of">% of ...</string>
     <string name="of">of</string>
     <string name="equals">equals...</string>

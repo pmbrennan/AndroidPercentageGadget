@@ -1,0 +1,1755 @@
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/About
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class net.pbrennan.AndroidPercentageGadget.About extends android.app.Activity
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 96):
+  + Integer [2130903040]
+  + Integer [2130968586]
+  + Integer [2131034112]
+  + Integer [2131034113]
+  + String [<N/A>]
+  + Class [android/app/Activity]
+  + Class [android/content/pm/PackageInfo]
+  + Class [android/content/pm/PackageManager]
+  + Class [android/content/pm/PackageManager$NameNotFoundException]
+  + Class [android/content/res/Resources]
+  + Class [android/os/Bundle]
+  + Class [android/view/View$OnClickListener]
+  + Class [android/widget/Button]
+  + Class [android/widget/TextView]
+  + Class [java/lang/NullPointerException]
+  + Class [java/lang/Object]
+  + Class [java/lang/String]
+  + Class [net/pbrennan/AndroidPercentageGadget/About]
+  + Fieldref [android/content/pm/PackageInfo.versionName Ljava/lang/String;]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/content/pm/PackageManager.getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
+  + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
+  + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [java/lang/NullPointerException.printStackTrace ()V]
+  + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.findViewById (I)Landroid/view/View;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.finish ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.getPackageName ()Ljava/lang/String;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.getResources ()Landroid/content/res/Resources;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/About.setContentView (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + NameAndType [getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
+  + NameAndType [getPackageName ()Ljava/lang/String;]
+  + NameAndType [getResources ()Landroid/content/res/Resources;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [printStackTrace ()V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [versionName Ljava/lang/String;]
+  + Utf8 [()Landroid/content/pm/PackageManager;]
+  + Utf8 [()Landroid/content/res/Resources;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+  + Utf8 [(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+  + Utf8 [<N/A>]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Ljava/lang/String;]
+  + Utf8 [StackMapTable]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/pm/PackageInfo]
+  + Utf8 [android/content/pm/PackageManager]
+  + Utf8 [android/content/pm/PackageManager$NameNotFoundException]
+  + Utf8 [android/content/res/Resources]
+  + Utf8 [android/os/Bundle]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/widget/Button]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [format]
+  + Utf8 [getPackageInfo]
+  + Utf8 [getPackageManager]
+  + Utf8 [getPackageName]
+  + Utf8 [getResources]
+  + Utf8 [getString]
+  + Utf8 [java/lang/NullPointerException]
+  + Utf8 [java/lang/Object]
+  + Utf8 [java/lang/String]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/About]
+  + Utf8 [onClick]
+  + Utf8 [onCreate]
+  + Utf8 [printStackTrace]
+  + Utf8 [setContentView]
+  + Utf8 [setOnClickListener]
+  + Utf8 [setText]
+  + Utf8 [versionName]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public About()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #20
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 110, locals = 7, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #21
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903040]
+      [8] invokevirtual #34
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.setContentView (I)V]
+      [11] aload_0 v0
+      [12] invokevirtual #33
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.getResources ()Landroid/content/res/Resources;]
+      [15] ldc #2
+        + Integer [2130968586]
+      [17] invokevirtual #24
+        + Methodref [android/content/res/Resources.getString (I)Ljava/lang/String;]
+      [20] astore_2 v2
+      [21] ldc #5
+        + String [<N/A>]
+      [23] astore_3 v3
+      [24] aload_0 v0
+      [25] invokevirtual #31
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.getPackageManager ()Landroid/content/pm/PackageManager;]
+      [28] aload_0 v0
+      [29] invokevirtual #32
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.getPackageName ()Ljava/lang/String;]
+      [32] iconst_0
+      [33] invokevirtual #22
+        + Methodref [android/content/pm/PackageManager.getPackageInfo (Ljava/lang/String;I)Landroid/content/pm/PackageInfo;]
+      [36] getfield #19
+        + Fieldref [android/content/pm/PackageInfo.versionName Ljava/lang/String;]
+      [39] astore_3 v3
+      [40] goto +20 (target=60)
+      [43] astore v4
+      [45] aload v4
+      [47] invokevirtual #27
+        + Methodref [java/lang/NullPointerException.printStackTrace ()V]
+      [50] goto +10 (target=60)
+      [53] astore v4
+      [55] aload v4
+      [57] invokevirtual #23
+        + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
+      [60] aload_2 v2
+      [61] iconst_1
+      [62] anewarray #16
+        + Class [java/lang/Object]
+      [65] dup
+      [66] iconst_0
+      [67] aload_3 v3
+      [68] aastore
+      [69] invokestatic #28
+        + Methodref [java/lang/String.format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;]
+      [72] astore v4
+      [74] aload_0 v0
+      [75] ldc #3
+        + Integer [2131034112]
+      [77] invokevirtual #29
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.findViewById (I)Landroid/view/View;]
+      [80] checkcast #14
+        + Class [android/widget/TextView]
+      [83] astore v5
+      [85] aload v5
+      [87] aload v4
+      [89] invokevirtual #26
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [92] aload_0 v0
+      [93] ldc #4
+        + Integer [2131034113]
+      [95] invokevirtual #29
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.findViewById (I)Landroid/view/View;]
+      [98] checkcast #13
+        + Class [android/widget/Button]
+      [101] astore v6
+      [103] aload v6
+      [105] aload_0 v0
+      [106] invokevirtual #25
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [109] return
+      Code attribute exceptions (count = 2):
+      - ExceptionInfo (24 -> 40: 43):
+      + Class [java/lang/NullPointerException]
+      - ExceptionInfo (24 -> 40: 53):
+      + Class [android/content/pm/PackageManager$NameNotFoundException]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 3):
+        - [43] Var: [a:net/pbrennan/AndroidPercentageGadget/About][a:android/os/Bundle][a:java/lang/String][a:java/lang/String], Stack: [a:java/lang/NullPointerException]
+        - [53] Var: ..., Stack: [a:android/content/pm/PackageManager$NameNotFoundException]
+        - [60] Var: ..., Stack: (empty)
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] invokevirtual #30
+        + Methodref [net/pbrennan/AndroidPercentageGadget/About.finish ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget extends android.app.Activity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 196):
+  + Integer [17301568]
+  + Integer [17301569]
+  + Integer [2130903042]
+  + Integer [2130968581]
+  + Integer [2130968582]
+  + Integer [2131034118]
+  + Integer [2131034121]
+  + Integer [2131034124]
+  + String []
+  + String [net.pbrennan.AndroidPercentageGadget]
+  + String [net.pbrennan.AndroidPercentageGadget.About]
+  + String [net.pbrennan.AndroidPercentageGadget.Help]
+  + String [scaleX]
+  + String [scaleY]
+  + Class [android/animation/Animator]
+  + Class [android/animation/AnimatorSet]
+  + Class [android/animation/ObjectAnimator]
+  + Class [android/app/Activity]
+  + Class [android/content/Intent]
+  + Class [android/view/Menu]
+  + Class [android/view/MenuItem]
+  + Class [android/view/animation/LinearInterpolator]
+  + Class [android/widget/TextView]
+  + Class [java/lang/CharSequence]
+  + Class [java/lang/Double]
+  + Class [java/lang/Exception]
+  + Class [java/lang/NullPointerException]
+  + Class [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Class [net/pbrennan/AndroidPercentageGadget/a]
+  + Class [net/pbrennan/AndroidPercentageGadget/b]
+  + Class [net/pbrennan/AndroidPercentageGadget/c]
+  + Class [net/pbrennan/AndroidPercentageGadget/d]
+  + Long [250]
+  + Double [100.0]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+  + Methodref [android/animation/AnimatorSet.<init> ()V]
+  + Methodref [android/animation/AnimatorSet.playTogether ([Landroid/animation/Animator;)V]
+  + Methodref [android/animation/AnimatorSet.start ()V]
+  + Methodref [android/animation/ObjectAnimator.ofFloat (Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;]
+  + Methodref [android/animation/ObjectAnimator.setDuration (J)Landroid/animation/ObjectAnimator;]
+  + Methodref [android/animation/ObjectAnimator.setEvaluator (Landroid/animation/TypeEvaluator;)V]
+  + Methodref [android/animation/ObjectAnimator.setInterpolator (Landroid/animation/TimeInterpolator;)V]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/app/Activity.onCreateOptionsMenu (Landroid/view/Menu;)Z]
+  + Methodref [android/app/Activity.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
+  + Methodref [android/content/Intent.<init> ()V]
+  + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Methodref [android/view/animation/LinearInterpolator.<init> ()V]
+  + Methodref [android/widget/TextView.addTextChangedListener (Landroid/text/TextWatcher;)V]
+  + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+  + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+  + Methodref [java/lang/Double.parseDouble (Ljava/lang/String;)D]
+  + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (I)Z]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Landroid/view/Menu;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Landroid/view/View;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b (I)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.getString (I)Ljava/lang/String;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.setContentView (I)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.startActivity (Landroid/content/Intent;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/a.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/b.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/c.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/d.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + InterfaceMethodref [android/view/Menu.add (I)Landroid/view/MenuItem;]
+  + InterfaceMethodref [android/view/Menu.setQwertyMode (Z)V]
+  + InterfaceMethodref [android/view/MenuItem.getTitle ()Ljava/lang/CharSequence;]
+  + InterfaceMethodref [android/view/MenuItem.setIcon (I)Landroid/view/MenuItem;]
+  + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + NameAndType [a ()V]
+  + NameAndType [a (I)Z]
+  + NameAndType [a (Landroid/view/Menu;)V]
+  + NameAndType [a (Landroid/view/View;)V]
+  + NameAndType [a [I]
+  + NameAndType [add (I)Landroid/view/MenuItem;]
+  + NameAndType [addTextChangedListener (Landroid/text/TextWatcher;)V]
+  + NameAndType [b ()V]
+  + NameAndType [b (I)V]
+  + NameAndType [b I]
+  + NameAndType [c Z]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [getText ()Ljava/lang/CharSequence;]
+  + NameAndType [getTitle ()Ljava/lang/CharSequence;]
+  + NameAndType [ofFloat (Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onCreateOptionsMenu (Landroid/view/Menu;)Z]
+  + NameAndType [onOptionsItemSelected (Landroid/view/MenuItem;)Z]
+  + NameAndType [parseDouble (Ljava/lang/String;)D]
+  + NameAndType [playTogether ([Landroid/animation/Animator;)V]
+  + NameAndType [setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setDuration (J)Landroid/animation/ObjectAnimator;]
+  + NameAndType [setEvaluator (Landroid/animation/TypeEvaluator;)V]
+  + NameAndType [setIcon (I)Landroid/view/MenuItem;]
+  + NameAndType [setInterpolator (Landroid/animation/TimeInterpolator;)V]
+  + NameAndType [setQwertyMode (Z)V]
+  + NameAndType [setText (Ljava/lang/CharSequence;)V]
+  + NameAndType [start ()V]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + NameAndType [toString ()Ljava/lang/String;]
+  + NameAndType [toString (D)Ljava/lang/String;]
+  + Utf8 []
+  + Utf8 [()Ljava/lang/CharSequence;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(D)Ljava/lang/String;]
+  + Utf8 [(I)Landroid/view/MenuItem;]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(I)Z]
+  + Utf8 [(J)Landroid/animation/ObjectAnimator;]
+  + Utf8 [(Landroid/animation/TimeInterpolator;)V]
+  + Utf8 [(Landroid/animation/TypeEvaluator;)V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/text/TextWatcher;)V]
+  + Utf8 [(Landroid/view/Menu;)V]
+  + Utf8 [(Landroid/view/Menu;)Z]
+  + Utf8 [(Landroid/view/MenuItem;)Z]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;]
+  + Utf8 [(Ljava/lang/String;)D]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + Utf8 [(Z)V]
+  + Utf8 [([Landroid/animation/Animator;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [I]
+  + Utf8 [StackMapTable]
+  + Utf8 [Z]
+  + Utf8 [[I]
+  + Utf8 [a]
+  + Utf8 [add]
+  + Utf8 [addTextChangedListener]
+  + Utf8 [android/animation/Animator]
+  + Utf8 [android/animation/AnimatorSet]
+  + Utf8 [android/animation/ObjectAnimator]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/view/Menu]
+  + Utf8 [android/view/MenuItem]
+  + Utf8 [android/view/animation/LinearInterpolator]
+  + Utf8 [android/widget/TextView]
+  + Utf8 [b]
+  + Utf8 [c]
+  + Utf8 [findViewById]
+  + Utf8 [getString]
+  + Utf8 [getText]
+  + Utf8 [getTitle]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Double]
+  + Utf8 [java/lang/Exception]
+  + Utf8 [java/lang/NullPointerException]
+  + Utf8 [net.pbrennan.AndroidPercentageGadget]
+  + Utf8 [net.pbrennan.AndroidPercentageGadget.About]
+  + Utf8 [net.pbrennan.AndroidPercentageGadget.Help]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/a]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/b]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/c]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/d]
+  + Utf8 [ofFloat]
+  + Utf8 [onCreate]
+  + Utf8 [onCreateOptionsMenu]
+  + Utf8 [onOptionsItemSelected]
+  + Utf8 [parseDouble]
+  + Utf8 [playTogether]
+  + Utf8 [scaleX]
+  + Utf8 [scaleY]
+  + Utf8 [setClassName]
+  + Utf8 [setContentView]
+  + Utf8 [setDuration]
+  + Utf8 [setEvaluator]
+  + Utf8 [setIcon]
+  + Utf8 [setInterpolator]
+  + Utf8 [setQwertyMode]
+  + Utf8 [setText]
+  + Utf8 [start]
+  + Utf8 [startActivity]
+  + Utf8 [toString]
+
+Fields (count = 3):
+  + Field:        a [I
+    Access flags: 0x2
+      = private int[] a
+  + Field:        b I
+    Access flags: 0x2
+      = private int b
+  + Field:        c Z
+    Access flags: 0x2
+      = private boolean c
+
+Methods (count = 11):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public AndroidPercentageGadget()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #47
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] aload_0 v0
+      [5] iconst_0
+      [6] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(I)Z
+    Access flags: 0x2
+      = private boolean a(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 321, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [4] ifeq +18 (target=22)
+      [7] iload_1 v1
+      [8] aload_0 v0
+      [9] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [12] ificmpne +10 (target=22)
+      [15] aload_0 v0
+      [16] iconst_0
+      [17] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [20] iconst_0
+      [21] ireturn
+      [22] iload_1 v1
+      [23] aload_0 v0
+      [24] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [27] iconst_0
+      [28] iaload
+      [29] ificmpeq +22 (target=51)
+      [32] aload_0 v0
+      [33] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [36] iconst_1
+      [37] aload_0 v0
+      [38] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [41] iconst_0
+      [42] iaload
+      [43] iastore
+      [44] aload_0 v0
+      [45] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [48] iconst_0
+      [49] iload_1 v1
+      [50] iastore
+      [51] aload_0 v0
+      [52] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [55] iconst_1
+      [56] iaload
+      [57] ifne +5 (target=62)
+      [60] iconst_0
+      [61] ireturn
+      [62] aload_0 v0
+      [63] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [66] iconst_0
+      [67] iaload
+      [68] lookupswitch (3 offsets, default=240) (target=308)
+        2131034118: offset = 36, target = 104
+        2131034121: offset = 104, target = 172
+        2131034124: offset = 172, target = 240
+        default: offset = 240, target = 308
+      [104] aload_0 v0
+      [105] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [108] iconst_1
+      [109] iaload
+      [110] lookupswitch (2 offsets, default=54) (target=164)
+        2131034121: offset = 26, target = 136
+        2131034124: offset = 40, target = 150
+        default: offset = 54, target = 164
+      [136] aload_0 v0
+      [137] ldc #8
+        + Integer [2131034124]
+      [139] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [142] aload_0 v0
+      [143] iconst_1
+      [144] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [147] goto +161 (target=308)
+      [150] aload_0 v0
+      [151] ldc #7
+        + Integer [2131034121]
+      [153] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [156] aload_0 v0
+      [157] iconst_1
+      [158] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [161] goto +147 (target=308)
+      [164] aload_0 v0
+      [165] iconst_0
+      [166] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [169] goto +139 (target=308)
+      [172] aload_0 v0
+      [173] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [176] iconst_1
+      [177] iaload
+      [178] lookupswitch (2 offsets, default=54) (target=232)
+        2131034118: offset = 26, target = 204
+        2131034124: offset = 40, target = 218
+        default: offset = 54, target = 232
+      [204] aload_0 v0
+      [205] ldc #8
+        + Integer [2131034124]
+      [207] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [210] aload_0 v0
+      [211] iconst_1
+      [212] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [215] goto +93 (target=308)
+      [218] aload_0 v0
+      [219] ldc #6
+        + Integer [2131034118]
+      [221] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [224] aload_0 v0
+      [225] iconst_1
+      [226] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [229] goto +79 (target=308)
+      [232] aload_0 v0
+      [233] iconst_0
+      [234] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [237] goto +71 (target=308)
+      [240] aload_0 v0
+      [241] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [244] iconst_1
+      [245] iaload
+      [246] lookupswitch (2 offsets, default=54) (target=300)
+        2131034118: offset = 40, target = 286
+        2131034121: offset = 26, target = 272
+        default: offset = 54, target = 300
+      [272] aload_0 v0
+      [273] ldc #6
+        + Integer [2131034118]
+      [275] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [278] aload_0 v0
+      [279] iconst_1
+      [280] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [283] goto +25 (target=308)
+      [286] aload_0 v0
+      [287] ldc #7
+        + Integer [2131034121]
+      [289] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [292] aload_0 v0
+      [293] iconst_1
+      [294] putfield #39
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.c Z]
+      [297] goto +11 (target=308)
+      [300] aload_0 v0
+      [301] iconst_0
+      [302] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [305] goto +3 (target=308)
+      [308] aload_0 v0
+      [309] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [312] ifeq +7 (target=319)
+      [315] iconst_1
+      [316] goto +4 (target=320)
+      [319] iconst_0
+      [320] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 18):
+        - [22] Var: ..., Stack: (empty)
+        - [51] Var: ..., Stack: (empty)
+        - [62] Var: ..., Stack: (empty)
+        - [104] Var: ..., Stack: (empty)
+        - [136] Var: ..., Stack: (empty)
+        - [150] Var: ..., Stack: (empty)
+        - [164] Var: ..., Stack: (empty)
+        - [172] Var: ..., Stack: (empty)
+        - [204] Var: ..., Stack: (empty)
+        - [218] Var: ..., Stack: (empty)
+        - [232] Var: ..., Stack: (empty)
+        - [240] Var: ..., Stack: (empty)
+        - [272] Var: ..., Stack: (empty)
+        - [286] Var: ..., Stack: (empty)
+        - [300] Var: ..., Stack: (empty)
+        - [308] Var: ..., Stack: (empty)
+        - [319] Var: ..., Stack: (empty)
+        - [320] Var: ..., Stack: [i]
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 108, locals = 3, stack = 6):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #48
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #3
+        + Integer [2130903042]
+      [8] invokevirtual #67
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.setContentView (I)V]
+      [11] aload_0 v0
+      [12] ldc #6
+        + Integer [2131034118]
+      [14] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [17] checkcast #23
+        + Class [android/widget/TextView]
+      [20] astore_2 v2
+      [21] aload_2 v2
+      [22] new #29
+        + Class [net/pbrennan/AndroidPercentageGadget/a]
+      [25] dup
+      [26] aload_0 v0
+      [27] invokespecial #69
+        + Methodref [net/pbrennan/AndroidPercentageGadget/a.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+      [30] invokevirtual #54
+        + Methodref [android/widget/TextView.addTextChangedListener (Landroid/text/TextWatcher;)V]
+      [33] aload_0 v0
+      [34] ldc #7
+        + Integer [2131034121]
+      [36] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [39] checkcast #23
+        + Class [android/widget/TextView]
+      [42] astore_2 v2
+      [43] aload_2 v2
+      [44] new #30
+        + Class [net/pbrennan/AndroidPercentageGadget/b]
+      [47] dup
+      [48] aload_0 v0
+      [49] invokespecial #70
+        + Methodref [net/pbrennan/AndroidPercentageGadget/b.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+      [52] invokevirtual #54
+        + Methodref [android/widget/TextView.addTextChangedListener (Landroid/text/TextWatcher;)V]
+      [55] aload_0 v0
+      [56] ldc #8
+        + Integer [2131034124]
+      [58] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [61] checkcast #23
+        + Class [android/widget/TextView]
+      [64] astore_2 v2
+      [65] aload_2 v2
+      [66] new #31
+        + Class [net/pbrennan/AndroidPercentageGadget/c]
+      [69] dup
+      [70] aload_0 v0
+      [71] invokespecial #71
+        + Methodref [net/pbrennan/AndroidPercentageGadget/c.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+      [74] invokevirtual #54
+        + Methodref [android/widget/TextView.addTextChangedListener (Landroid/text/TextWatcher;)V]
+      [77] aload_0 v0
+      [78] iconst_2
+      [79] newarray 10
+      [81] putfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [84] aload_0 v0
+      [85] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [88] iconst_0
+      [89] aload_0 v0
+      [90] getfield #37
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a [I]
+      [93] iconst_1
+      [94] iconst_0
+      [95] dup_x2
+      [96] iastore
+      [97] iastore
+      [98] aload_0 v0
+      [99] iconst_0
+      [100] putfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [103] aload_0 v0
+      [104] invokespecial #59
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a ()V]
+      [107] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b(I)V
+    Access flags: 0x2
+      = private void b(int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 17, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] invokespecial #60
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (I)Z]
+      [5] ifeq +11 (target=16)
+      [8] aload_0 v0
+      [9] invokespecial #59
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a ()V]
+      [12] aload_0 v0
+      [13] invokespecial #63
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b ()V]
+      [16] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [16] Var: ..., Stack: (empty)
+  + Method:       a()V
+    Access flags: 0x2
+      = private void a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_0 v0
+      [2] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [5] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [8] checkcast #23
+        + Class [android/widget/TextView]
+      [11] astore_1 v1
+      [12] aload_0 v0
+      [13] aload_1 v1
+      [14] invokespecial #62
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Landroid/view/View;)V]
+      [17] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       b()V
+    Access flags: 0x2
+      = private void b()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 287, locals = 14, stack = 4):
+      [0] iconst_1
+      [1] istore v7
+      [3] iconst_1
+      [4] istore v8
+      [6] iconst_1
+      [7] istore v9
+      [9] aload_0 v0
+      [10] ldc #6
+        + Integer [2131034118]
+      [12] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [15] checkcast #23
+        + Class [android/widget/TextView]
+      [18] astore v10
+      [20] aload v10
+      [22] invokevirtual #55
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [25] invokeinterface #77
+        + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [30] invokestatic #57
+        + Methodref [java/lang/Double.parseDouble (Ljava/lang/String;)D]
+      [33] dstore_1 v1
+      [34] goto +10 (target=44)
+      [37] astore v11
+      [39] dconst_0
+      [40] dstore_1 v1
+      [41] iconst_0
+      [42] istore v7
+      [44] aload_0 v0
+      [45] ldc #7
+        + Integer [2131034121]
+      [47] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [50] checkcast #23
+        + Class [android/widget/TextView]
+      [53] astore v11
+      [55] aload v11
+      [57] invokevirtual #55
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [60] invokeinterface #77
+        + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [65] invokestatic #57
+        + Methodref [java/lang/Double.parseDouble (Ljava/lang/String;)D]
+      [68] dstore_3 v3
+      [69] goto +20 (target=89)
+      [72] astore v12
+      [74] dconst_0
+      [75] dstore_3 v3
+      [76] iconst_0
+      [77] istore v8
+      [79] goto +10 (target=89)
+      [82] astore v12
+      [84] dconst_0
+      [85] dstore_3 v3
+      [86] iconst_0
+      [87] istore v8
+      [89] aload_0 v0
+      [90] ldc #8
+        + Integer [2131034124]
+      [92] invokevirtual #65
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.findViewById (I)Landroid/view/View;]
+      [95] checkcast #23
+        + Class [android/widget/TextView]
+      [98] astore v12
+      [100] aload v12
+      [102] invokevirtual #55
+        + Methodref [android/widget/TextView.getText ()Ljava/lang/CharSequence;]
+      [105] invokeinterface #77
+        + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
+      [110] invokestatic #57
+        + Methodref [java/lang/Double.parseDouble (Ljava/lang/String;)D]
+      [113] dstore v5
+      [115] goto +11 (target=126)
+      [118] astore v13
+      [120] dconst_0
+      [121] dstore v5
+      [123] iconst_0
+      [124] istore v9
+      [126] aload_0 v0
+      [127] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [130] ldc #8
+        + Integer [2131034124]
+      [132] ificmpne +49 (target=181)
+      [135] iload v8
+      [137] ifeq +34 (target=171)
+      [140] iload v7
+      [142] ifeq +29 (target=171)
+      [145] dload_1 v1
+      [146] dload_3 v3
+      [147] dmul
+      [148] ldc2_w #35
+        + Double [100.0]
+      [151] ddiv
+      [152] dstore v5
+      [154] dload v5
+      [156] invokestatic #58
+        + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+      [159] astore v13
+      [161] aload v12
+      [163] aload v13
+      [165] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [168] goto +118 (target=286)
+      [171] aload v12
+      [173] ldc #9
+        + String []
+      [175] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [178] goto +108 (target=286)
+      [181] aload_0 v0
+      [182] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [185] ldc #6
+        + Integer [2131034118]
+      [187] ificmpne +48 (target=235)
+      [190] iload v8
+      [192] ifeq +33 (target=225)
+      [195] iload v9
+      [197] ifeq +28 (target=225)
+      [200] ldc2_w #35
+        + Double [100.0]
+      [203] dload v5
+      [205] dmul
+      [206] dload_3 v3
+      [207] ddiv
+      [208] dstore_1 v1
+      [209] dload_1 v1
+      [210] invokestatic #58
+        + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+      [213] astore v13
+      [215] aload v10
+      [217] aload v13
+      [219] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [222] goto +64 (target=286)
+      [225] aload v10
+      [227] ldc #9
+        + String []
+      [229] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [232] goto +54 (target=286)
+      [235] aload_0 v0
+      [236] getfield #38
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b I]
+      [239] ldc #7
+        + Integer [2131034121]
+      [241] ificmpne +45 (target=286)
+      [244] iload v7
+      [246] ifeq +33 (target=279)
+      [249] iload v9
+      [251] ifeq +28 (target=279)
+      [254] ldc2_w #35
+        + Double [100.0]
+      [257] dload v5
+      [259] dmul
+      [260] dload_1 v1
+      [261] ddiv
+      [262] dstore_3 v3
+      [263] dload_3 v3
+      [264] invokestatic #58
+        + Methodref [java/lang/Double.toString (D)Ljava/lang/String;]
+      [267] astore v13
+      [269] aload v11
+      [271] aload v13
+      [273] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [276] goto +10 (target=286)
+      [279] aload v11
+      [281] ldc #9
+        + String []
+      [283] invokevirtual #56
+        + Methodref [android/widget/TextView.setText (Ljava/lang/CharSequence;)V]
+      [286] return
+      Code attribute exceptions (count = 4):
+      - ExceptionInfo (20 -> 34: 37):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (55 -> 69: 72):
+      + Class [java/lang/NullPointerException]
+      - ExceptionInfo (55 -> 69: 82):
+      + Class [java/lang/Exception]
+      - ExceptionInfo (100 -> 115: 118):
+      + Class [java/lang/Exception]
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 13):
+        - [37] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][T][T][T][T][T][T][i][i][i][a:android/widget/TextView], Stack: [a:java/lang/Exception]
+        - [44] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][d][T][T][T][T][i][i][i][a:android/widget/TextView], Stack: 
+        - [72] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][d][T][T][T][T][i][i][i][a:android/widget/TextView][a:android/widget/TextView], Stack: [a:java/lang/NullPointerException]
+        - [82] Var: ..., Stack: [a:java/lang/Exception]
+        - [89] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][d][d][T][T][i][i][i][a:android/widget/TextView][a:android/widget/TextView], Stack: 
+        - [118] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][d][d][T][T][i][i][i][a:android/widget/TextView][a:android/widget/TextView][a:android/widget/TextView], Stack: [a:java/lang/Exception]
+        - [126] Var: [a:net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget][d][d][d][i][i][i][a:android/widget/TextView][a:android/widget/TextView][a:android/widget/TextView], Stack: 
+        - [171] Var: ..., Stack: (empty)
+        - [181] Var: ..., Stack: (empty)
+        - [225] Var: ..., Stack: (empty)
+        - [235] Var: ..., Stack: (empty)
+        - [279] Var: ..., Stack: (empty)
+        - [286] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/view/Menu;)V
+    Access flags: 0x1
+      = public void a(android.view.Menu)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 44, locals = 4, stack = 2):
+      [0] aload_1 v1
+      [1] iconst_1
+      [2] invokeinterface #74
+        + InterfaceMethodref [android/view/Menu.setQwertyMode (Z)V]
+      [7] aload_1 v1
+      [8] ldc #5
+        + Integer [2130968582]
+      [10] invokeinterface #73
+        + InterfaceMethodref [android/view/Menu.add (I)Landroid/view/MenuItem;]
+      [15] astore_2 v2
+      [16] aload_2 v2
+      [17] ldc #1
+        + Integer [17301568]
+      [19] invokeinterface #76
+        + InterfaceMethodref [android/view/MenuItem.setIcon (I)Landroid/view/MenuItem;]
+      [24] pop
+      [25] aload_1 v1
+      [26] ldc #4
+        + Integer [2130968581]
+      [28] invokeinterface #73
+        + InterfaceMethodref [android/view/Menu.add (I)Landroid/view/MenuItem;]
+      [33] astore_3 v3
+      [34] aload_3 v3
+      [35] ldc #2
+        + Integer [17301569]
+      [37] invokeinterface #76
+        + InterfaceMethodref [android/view/MenuItem.setIcon (I)Landroid/view/MenuItem;]
+      [42] pop
+      [43] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreateOptionsMenu(Landroid/view/Menu;)Z
+    Access flags: 0x1
+      = public boolean onCreateOptionsMenu(android.view.Menu)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 11, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokevirtual #61
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Landroid/view/Menu;)V]
+      [5] aload_0 v0
+      [6] aload_1 v1
+      [7] invokespecial #49
+        + Methodref [android/app/Activity.onCreateOptionsMenu (Landroid/view/Menu;)Z]
+      [10] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    Access flags: 0x1
+      = public boolean onOptionsItemSelected(android.view.MenuItem)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 84, locals = 3, stack = 3):
+      [0] aload_1 v1
+      [1] invokeinterface #75
+        + InterfaceMethodref [android/view/MenuItem.getTitle ()Ljava/lang/CharSequence;]
+      [6] aload_0 v0
+      [7] ldc #5
+        + Integer [2130968582]
+      [9] invokevirtual #66
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.getString (I)Ljava/lang/String;]
+      [12] ifacmpne +27 (target=39)
+      [15] new #19
+        + Class [android/content/Intent]
+      [18] dup
+      [19] invokespecial #51
+        + Methodref [android/content/Intent.<init> ()V]
+      [22] astore_2 v2
+      [23] aload_2 v2
+      [24] ldc #10
+        + String [net.pbrennan.AndroidPercentageGadget]
+      [26] ldc #12
+        + String [net.pbrennan.AndroidPercentageGadget.Help]
+      [28] invokevirtual #52
+        + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [31] pop
+      [32] aload_0 v0
+      [33] aload_2 v2
+      [34] invokevirtual #68
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.startActivity (Landroid/content/Intent;)V]
+      [37] iconst_1
+      [38] ireturn
+      [39] aload_1 v1
+      [40] invokeinterface #75
+        + InterfaceMethodref [android/view/MenuItem.getTitle ()Ljava/lang/CharSequence;]
+      [45] aload_0 v0
+      [46] ldc #4
+        + Integer [2130968581]
+      [48] invokevirtual #66
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.getString (I)Ljava/lang/String;]
+      [51] ifacmpne +27 (target=78)
+      [54] new #19
+        + Class [android/content/Intent]
+      [57] dup
+      [58] invokespecial #51
+        + Methodref [android/content/Intent.<init> ()V]
+      [61] astore_2 v2
+      [62] aload_2 v2
+      [63] ldc #10
+        + String [net.pbrennan.AndroidPercentageGadget]
+      [65] ldc #11
+        + String [net.pbrennan.AndroidPercentageGadget.About]
+      [67] invokevirtual #52
+        + Methodref [android/content/Intent.setClassName (Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;]
+      [70] pop
+      [71] aload_0 v0
+      [72] aload_2 v2
+      [73] invokevirtual #68
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.startActivity (Landroid/content/Intent;)V]
+      [76] iconst_1
+      [77] ireturn
+      [78] aload_0 v0
+      [79] aload_1 v1
+      [80] invokespecial #50
+        + Methodref [android/app/Activity.onOptionsItemSelected (Landroid/view/MenuItem;)Z]
+      [83] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [39] Var: ..., Stack: (empty)
+        - [78] Var: ..., Stack: (empty)
+  + Method:       a(Landroid/view/View;)V
+    Access flags: 0x2
+      = private void a(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 137, locals = 6, stack = 6):
+      [0] new #16
+        + Class [android/animation/AnimatorSet]
+      [3] dup
+      [4] invokespecial #40
+        + Methodref [android/animation/AnimatorSet.<init> ()V]
+      [7] astore_2 v2
+      [8] aload_1 v1
+      [9] ifnonnull +4 (target=13)
+      [12] return
+      [13] new #32
+        + Class [net/pbrennan/AndroidPercentageGadget/d]
+      [16] dup
+      [17] aload_0 v0
+      [18] invokespecial #72
+        + Methodref [net/pbrennan/AndroidPercentageGadget/d.<init> (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+      [21] astore_3 v3
+      [22] aload_1 v1
+      [23] ldc #13
+        + String [scaleX]
+      [25] iconst_2
+      [26] newarray 6
+      [28] dup
+      [29] iconst_0
+      [30] fconst_1
+      [31] fastore
+      [32] dup
+      [33] iconst_1
+      [34] fconst_1
+      [35] fastore
+      [36] invokestatic #43
+        + Methodref [android/animation/ObjectAnimator.ofFloat (Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;]
+      [39] astore v4
+      [41] aload v4
+      [43] new #22
+        + Class [android/view/animation/LinearInterpolator]
+      [46] dup
+      [47] invokespecial #53
+        + Methodref [android/view/animation/LinearInterpolator.<init> ()V]
+      [50] invokevirtual #46
+        + Methodref [android/animation/ObjectAnimator.setInterpolator (Landroid/animation/TimeInterpolator;)V]
+      [53] aload v4
+      [55] aload_3 v3
+      [56] invokevirtual #45
+        + Methodref [android/animation/ObjectAnimator.setEvaluator (Landroid/animation/TypeEvaluator;)V]
+      [59] aload v4
+      [61] ldc2_w #33
+        + Long [250]
+      [64] invokevirtual #44
+        + Methodref [android/animation/ObjectAnimator.setDuration (J)Landroid/animation/ObjectAnimator;]
+      [67] pop
+      [68] aload_1 v1
+      [69] ldc #14
+        + String [scaleY]
+      [71] iconst_2
+      [72] newarray 6
+      [74] dup
+      [75] iconst_0
+      [76] fconst_1
+      [77] fastore
+      [78] dup
+      [79] iconst_1
+      [80] fconst_1
+      [81] fastore
+      [82] invokestatic #43
+        + Methodref [android/animation/ObjectAnimator.ofFloat (Ljava/lang/Object;Ljava/lang/String;[F)Landroid/animation/ObjectAnimator;]
+      [85] astore v5
+      [87] aload v5
+      [89] new #22
+        + Class [android/view/animation/LinearInterpolator]
+      [92] dup
+      [93] invokespecial #53
+        + Methodref [android/view/animation/LinearInterpolator.<init> ()V]
+      [96] invokevirtual #46
+        + Methodref [android/animation/ObjectAnimator.setInterpolator (Landroid/animation/TimeInterpolator;)V]
+      [99] aload v5
+      [101] aload_3 v3
+      [102] invokevirtual #45
+        + Methodref [android/animation/ObjectAnimator.setEvaluator (Landroid/animation/TypeEvaluator;)V]
+      [105] aload v5
+      [107] ldc2_w #33
+        + Long [250]
+      [110] invokevirtual #44
+        + Methodref [android/animation/ObjectAnimator.setDuration (J)Landroid/animation/ObjectAnimator;]
+      [113] pop
+      [114] aload_2 v2
+      [115] iconst_2
+      [116] anewarray #15
+        + Class [android/animation/Animator]
+      [119] dup
+      [120] iconst_0
+      [121] aload v4
+      [123] aastore
+      [124] dup
+      [125] iconst_1
+      [126] aload v5
+      [128] aastore
+      [129] invokevirtual #41
+        + Methodref [android/animation/AnimatorSet.playTogether ([Landroid/animation/Animator;)V]
+      [132] aload_2 v2
+      [133] invokevirtual #42
+        + Methodref [android/animation/AnimatorSet.start ()V]
+      [136] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [13] Var: ...[a:android/animation/AnimatorSet], Stack: (empty)
+  + Method:       a(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V
+    Access flags: 0x1008
+      = static synthetic void a(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 6, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] iload_1 v1
+      [2] invokespecial #64
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.b (I)V]
+      [5] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/a
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.pbrennan.AndroidPercentageGadget.a extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/text/TextWatcher]
+
+Constant Pool (count = 28):
+  + Integer [2131034118]
+  + Class [android/text/TextWatcher]
+  + Class [java/lang/Object]
+  + Class [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Class [net/pbrennan/AndroidPercentageGadget/a]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/a.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/text/Editable;)V]
+  + Utf8 [(Ljava/lang/CharSequence;III)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [a]
+  + Utf8 [afterTextChanged]
+  + Utf8 [android/text/TextWatcher]
+  + Utf8 [beforeTextChanged]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/a]
+  + Utf8 [onTextChanged]
+
+Fields (count = 1):
+  + Field:        a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;
+    Access flags: 0x1010
+      = final synthetic net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget a
+
+Methods (count = 4):
+  - Method:       <init>(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V
+    Access flags: 0x0
+      = a(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/a.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       beforeTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void beforeTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void onTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       afterTextChanged(Landroid/text/Editable;)V
+    Access flags: 0x1
+      = public void afterTextChanged(android.text.Editable)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/a.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [4] ldc #1
+        + Integer [2131034118]
+      [6] invokestatic #8
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.pbrennan.AndroidPercentageGadget.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/text/TextWatcher]
+
+Constant Pool (count = 28):
+  + Integer [2131034121]
+  + Class [android/text/TextWatcher]
+  + Class [java/lang/Object]
+  + Class [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Class [net/pbrennan/AndroidPercentageGadget/b]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/b.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/text/Editable;)V]
+  + Utf8 [(Ljava/lang/CharSequence;III)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [a]
+  + Utf8 [afterTextChanged]
+  + Utf8 [android/text/TextWatcher]
+  + Utf8 [beforeTextChanged]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/b]
+  + Utf8 [onTextChanged]
+
+Fields (count = 1):
+  + Field:        a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;
+    Access flags: 0x1010
+      = final synthetic net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget a
+
+Methods (count = 4):
+  - Method:       <init>(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V
+    Access flags: 0x0
+      = b(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/b.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       beforeTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void beforeTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void onTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       afterTextChanged(Landroid/text/Editable;)V
+    Access flags: 0x1
+      = public void afterTextChanged(android.text.Editable)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/b.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [4] ldc #1
+        + Integer [2131034121]
+      [6] invokestatic #8
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.pbrennan.AndroidPercentageGadget.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/text/TextWatcher]
+
+Constant Pool (count = 28):
+  + Integer [2131034124]
+  + Class [android/text/TextWatcher]
+  + Class [java/lang/Object]
+  + Class [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Class [net/pbrennan/AndroidPercentageGadget/c]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/c.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + NameAndType [a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/text/Editable;)V]
+  + Utf8 [(Ljava/lang/CharSequence;III)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [a]
+  + Utf8 [afterTextChanged]
+  + Utf8 [android/text/TextWatcher]
+  + Utf8 [beforeTextChanged]
+  + Utf8 [java/lang/Object]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/c]
+  + Utf8 [onTextChanged]
+
+Fields (count = 1):
+  + Field:        a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;
+    Access flags: 0x1010
+      = final synthetic net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget a
+
+Methods (count = 4):
+  - Method:       <init>(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V
+    Access flags: 0x0
+      = c(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/c.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [5] aload_0 v0
+      [6] invokespecial #7
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       beforeTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void beforeTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onTextChanged(Ljava/lang/CharSequence;III)V
+    Access flags: 0x1
+      = public void onTextChanged(java.lang.CharSequence,int,int,int)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 1, locals = 5, stack = 0):
+      [0] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       afterTextChanged(Landroid/text/Editable;)V
+    Access flags: 0x1
+      = public void afterTextChanged(android.text.Editable)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] getfield #6
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/c.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [4] ldc #1
+        + Integer [2131034124]
+      [6] invokestatic #8
+        + Methodref [net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.a (Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;I)V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/d
+  Superclass:    android/animation/FloatEvaluator
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class net.pbrennan.AndroidPercentageGadget.d extends android.animation.FloatEvaluator
+
+Interfaces (count = 0):
+
+Constant Pool (count = 42):
+  + Class [android/animation/FloatEvaluator]
+  + Class [java/lang/Float]
+  + Class [java/lang/Math]
+  + Class [java/lang/Number]
+  + Class [net/pbrennan/AndroidPercentageGadget/d]
+  + Double [0.2]
+  + Double [3.141592653589793]
+  + Fieldref [net/pbrennan/AndroidPercentageGadget/d.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Methodref [android/animation/FloatEvaluator.<init> ()V]
+  + Methodref [java/lang/Float.valueOf (F)Ljava/lang/Float;]
+  + Methodref [java/lang/Math.sin (D)D]
+  + Methodref [java/lang/Number.floatValue ()F]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/d.evaluate (FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + NameAndType [evaluate (FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;]
+  + NameAndType [floatValue ()F]
+  + NameAndType [sin (D)D]
+  + NameAndType [valueOf (F)Ljava/lang/Float;]
+  + Utf8 [()F]
+  + Utf8 [()V]
+  + Utf8 [(D)D]
+  + Utf8 [(F)Ljava/lang/Float;]
+  + Utf8 [(FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;]
+  + Utf8 [(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;]
+  + Utf8 [(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+  + Utf8 [a]
+  + Utf8 [android/animation/FloatEvaluator]
+  + Utf8 [evaluate]
+  + Utf8 [floatValue]
+  + Utf8 [java/lang/Float]
+  + Utf8 [java/lang/Math]
+  + Utf8 [java/lang/Number]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/d]
+  + Utf8 [sin]
+  + Utf8 [valueOf]
+
+Fields (count = 1):
+  + Field:        a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;
+    Access flags: 0x1010
+      = final synthetic net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget a
+
+Methods (count = 3):
+  - Method:       <init>(Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;)V
+    Access flags: 0x0
+      = d(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #10
+        + Fieldref [net/pbrennan/AndroidPercentageGadget/d.a Lnet/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget;]
+      [5] aload_0 v0
+      [6] invokespecial #11
+        + Methodref [android/animation/FloatEvaluator.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       evaluate(FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;
+    Access flags: 0x1
+      = public java.lang.Float evaluate(float,java.lang.Number,java.lang.Number)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 30, locals = 6, stack = 6):
+      [0] ldc2_w #8
+        + Double [3.141592653589793]
+      [3] fload_1 v1
+      [4] f2d
+      [5] dmul
+      [6] invokestatic #13
+        + Methodref [java/lang/Math.sin (D)D]
+      [9] ldc2_w #6
+        + Double [0.2]
+      [12] dmul
+      [13] dstore v4
+      [15] aload_2 v2
+      [16] invokevirtual #14
+        + Methodref [java/lang/Number.floatValue ()F]
+      [19] f2d
+      [20] dconst_1
+      [21] dload v4
+      [23] dadd
+      [24] dmul
+      [25] d2f
+      [26] invokestatic #12
+        + Methodref [java/lang/Float.valueOf (F)Ljava/lang/Float;]
+      [29] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       evaluate(FLjava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    Access flags: 0x1041
+      = public bridge synthetic java.lang.Object evaluate(float,java.lang.Object,java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 14, locals = 4, stack = 4):
+      [0] aload_0 v0
+      [1] fload_1 v1
+      [2] aload_2 v2
+      [3] checkcast #4
+        + Class [java/lang/Number]
+      [6] aload_3 v3
+      [7] checkcast #4
+        + Class [java/lang/Number]
+      [10] invokevirtual #15
+        + Methodref [net/pbrennan/AndroidPercentageGadget/d.evaluate (FLjava/lang/Number;Ljava/lang/Number;)Ljava/lang/Float;]
+      [13] areturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: net/pbrennan/AndroidPercentageGadget/Help
+  Superclass:    android/app/Activity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class net.pbrennan.AndroidPercentageGadget.Help extends android.app.Activity
+
+Interfaces (count = 1):
+  + Class [android/view/View$OnClickListener]
+
+Constant Pool (count = 37):
+  + Integer [2130903041]
+  + Integer [2131034113]
+  + Class [android/app/Activity]
+  + Class [android/view/View$OnClickListener]
+  + Class [android/widget/Button]
+  + Class [net/pbrennan/AndroidPercentageGadget/Help]
+  + Methodref [android/app/Activity.<init> ()V]
+  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/Help.findViewById (I)Landroid/view/View;]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/Help.finish ()V]
+  + Methodref [net/pbrennan/AndroidPercentageGadget/Help.setContentView (I)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [findViewById (I)Landroid/view/View;]
+  + NameAndType [finish ()V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [setContentView (I)V]
+  + NameAndType [setOnClickListener (Landroid/view/View$OnClickListener;)V]
+  + Utf8 [()V]
+  + Utf8 [(I)Landroid/view/View;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/view/View$OnClickListener;)V]
+  + Utf8 [(Landroid/view/View;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [android/app/Activity]
+  + Utf8 [android/view/View$OnClickListener]
+  + Utf8 [android/widget/Button]
+  + Utf8 [findViewById]
+  + Utf8 [finish]
+  + Utf8 [net/pbrennan/AndroidPercentageGadget/Help]
+  + Utf8 [onClick]
+  + Utf8 [onCreate]
+  + Utf8 [setContentView]
+  + Utf8 [setOnClickListener]
+
+Fields (count = 0):
+
+Methods (count = 3):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public Help()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #7
+        + Methodref [android/app/Activity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #8
+        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903041]
+      [8] invokevirtual #12
+        + Methodref [net/pbrennan/AndroidPercentageGadget/Help.setContentView (I)V]
+      [11] aload_0 v0
+      [12] ldc #2
+        + Integer [2131034113]
+      [14] invokevirtual #10
+        + Methodref [net/pbrennan/AndroidPercentageGadget/Help.findViewById (I)Landroid/view/View;]
+      [17] checkcast #5
+        + Class [android/widget/Button]
+      [20] astore_2 v2
+      [21] aload_2 v2
+      [22] aload_0 v0
+      [23] invokevirtual #9
+        + Methodref [android/widget/Button.setOnClickListener (Landroid/view/View$OnClickListener;)V]
+      [26] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onClick(Landroid/view/View;)V
+    Access flags: 0x1
+      = public void onClick(android.view.View)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 2, stack = 1):
+      [0] aload_0 v0
+      [1] invokevirtual #11
+        + Methodref [net/pbrennan/AndroidPercentageGadget/Help.finish ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+

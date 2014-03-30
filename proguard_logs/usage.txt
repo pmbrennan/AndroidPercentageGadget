@@ -1,0 +1,8 @@
+net.pbrennan.AndroidPercentageGadget.BuildConfig
+net.pbrennan.AndroidPercentageGadget.R
+net.pbrennan.AndroidPercentageGadget.R$animator
+net.pbrennan.AndroidPercentageGadget.R$attr
+net.pbrennan.AndroidPercentageGadget.R$drawable
+net.pbrennan.AndroidPercentageGadget.R$id
+net.pbrennan.AndroidPercentageGadget.R$layout
+net.pbrennan.AndroidPercentageGadget.R$string

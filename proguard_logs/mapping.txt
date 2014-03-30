@@ -1,0 +1,39 @@
+net.pbrennan.AndroidPercentageGadget.About -> net.pbrennan.AndroidPercentageGadget.About:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget -> net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget:
+    int[] m_modStack -> a
+    int m_targetedField -> b
+    boolean m_ignoreTargetedFieldChange -> c
+    boolean pushViewId(int) -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onViewChanged(int) -> b
+    void FixResultIndicator() -> a
+    void DoComputation() -> b
+    void populateMenu(android.view.Menu) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void addAnimation(android.view.View) -> a
+    void access$000(net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget,int) -> a
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget$1 -> net.pbrennan.AndroidPercentageGadget.a:
+    net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget this$0 -> a
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget$2 -> net.pbrennan.AndroidPercentageGadget.b:
+    net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget this$0 -> a
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget$3 -> net.pbrennan.AndroidPercentageGadget.c:
+    net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget this$0 -> a
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget$4 -> net.pbrennan.AndroidPercentageGadget.d:
+    net.pbrennan.AndroidPercentageGadget.AndroidPercentageGadget this$0 -> a
+    java.lang.Float evaluate(float,java.lang.Number,java.lang.Number) -> evaluate
+    java.lang.Object evaluate(float,java.lang.Object,java.lang.Object) -> evaluate
+net.pbrennan.AndroidPercentageGadget.Help -> net.pbrennan.AndroidPercentageGadget.Help:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick

@@ -189,28 +189,6 @@ public class AndroidPercentageGadget
 	{
         TextView targetedView = (TextView)findViewById(m_targetedField);
         addAnimation(targetedView);
-
-		ImageView percentLight = (ImageView)findViewById(R.id.PercentTargeted);
-		ImageView valueLight = (ImageView)findViewById(R.id.ValueTargeted);
-		ImageView productLight = (ImageView)findViewById(R.id.ProductTargeted);
-
-//		if (m_targetedField == R.id.PercentField) {
-//            percentLight.setImageResource(R.drawable.active);
-//        } else {
-//            percentLight.setImageResource(R.drawable.inactive);
-//        }
-//
-//		if (m_targetedField == R.id.ValueField) {
-//            valueLight.setImageResource(R.drawable.active);
-//        } else {
-//            valueLight.setImageResource(R.drawable.inactive);
-//        }
-//
-//		if (m_targetedField == R.id.ProductField) {
-//            productLight.setImageResource(R.drawable.active);
-//        } else {
-//            productLight.setImageResource(R.drawable.inactive);
-//        }
 	}
 
     /**
