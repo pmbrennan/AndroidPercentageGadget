@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -17,7 +18,7 @@ import android.widget.TextView;
 public class AndroidPercentageGadget 
 	extends Activity
 {
-    //private static final String TAG = AndroidPercentageGadget.class.getSimpleName();
+    private static final String TAG = AndroidPercentageGadget.class.getSimpleName();
 
     // A stack which maintains the LRU state of the fields.
     // m_modStack[0] == the last id modified by the user.
@@ -33,6 +34,10 @@ public class AndroidPercentageGadget
     // of which we need to ignore.
     private boolean m_ignoreTargetedFieldChange = false;
 
+    // m_configChangedCounter lets us ignore field changes due to configuration
+    // changes.
+    private int m_configChangedCounter = 0;
+
     // Variable names for saving state
     private static final String STACK0_NAME = "stack0";
     private static final String STACK1_NAME = "stack1";
@@ -46,6 +51,8 @@ public class AndroidPercentageGadget
         outState.putInt(STACK1_NAME, m_modStack[1]);
         outState.putInt(TARGET_NAME, m_targetedField);
         outState.putBoolean(IGNORE_FLAG_NAME, m_ignoreTargetedFieldChange);
+
+        logState();
     }
 
     /**
@@ -59,6 +66,13 @@ public class AndroidPercentageGadget
         // ignore.
         if (m_ignoreTargetedFieldChange && id == m_targetedField) {
             m_ignoreTargetedFieldChange = false;
+            return false;
+        }
+
+        // If the view is being changed as a result of a configuration change,
+        // ignore
+        if (m_configChangedCounter > 0) {
+            m_configChangedCounter--;
             return false;
         }
 
@@ -140,13 +154,17 @@ public class AndroidPercentageGadget
             m_ignoreTargetedFieldChange = false;
             m_targetedField = 0;
             m_modStack[0] = 0;
-            m_modStack[1] = 1;
+            m_modStack[1] = 0;
+            m_configChangedCounter = 0;
         } else {
             m_ignoreTargetedFieldChange = savedInstanceState.getBoolean(IGNORE_FLAG_NAME);
             m_targetedField = savedInstanceState.getInt(TARGET_NAME);
             m_modStack[0] = savedInstanceState.getInt(STACK0_NAME);
             m_modStack[1] = savedInstanceState.getInt(STACK1_NAME);
+            m_configChangedCounter = 3;
         }
+
+        logState();
         
         // Set up the key listeners.
         TextView tv = (TextView)findViewById(R.id.PercentField);
@@ -180,25 +198,18 @@ public class AndroidPercentageGadget
         tv = (TextView)findViewById(R.id.ProductField);
         tv.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
 
             @Override
             public void afterTextChanged(Editable s) {
                 onViewChanged(R.id.ProductField);
             }
         });
-        
-        // Initialize the modStack. This will keep track of
-        // which fields have been touched. The last two fields
-        // modified by the user will determine which field changes.
-        m_modStack = new int[2];
-        m_modStack[0] = m_modStack[1] = 0;
-        
-        m_targetedField = 0;
-        FixResultIndicator();
     }
 
     private void onViewChanged(int viewid) {
@@ -229,7 +240,9 @@ public class AndroidPercentageGadget
 		boolean percentageOK = true;
 		boolean valueOK = true;
 		boolean productOK = true;
-		
+
+        Log.i(TAG, "in DoComputation");
+
 		TextView percentageTextView = (TextView)findViewById(R.id.PercentField);
 		
 		try
@@ -406,5 +419,11 @@ public class AndroidPercentageGadget
 
         set.playTogether(animator1, animator2);
         set.start();
+    }
+
+    private void logState() {
+        Log.i(TAG, "Mod stack 0 = " + m_modStack[0]);
+        Log.i(TAG, "Mod stack 1 = " + m_modStack[1]);
+        Log.i(TAG, "Target id = " + m_targetedField);
     }
 }
