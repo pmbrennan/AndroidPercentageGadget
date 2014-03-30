@@ -33,8 +33,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c9ad87fb-2080-4131-a90d-7c83cb51810e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" afterPath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidPercentageGadget.iws" />
@@ -108,10 +106,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16157989" vertical-offset="0" max-vertical-offset="557">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
               <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
               <folding />
             </state>
@@ -191,17 +189,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AndroidPercentageGadget.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="AndroidPercentageGadget.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="3801" max-vertical-offset="5310">
-              <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.29473683" vertical-offset="2037" max-vertical-offset="5895">
+              <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding>
-                <element signature="e#8594#8643#0" expanded="true" />
-                <element signature="e#9063#9078#0" expanded="true" />
-                <element signature="e#9155#9176#0" expanded="true" />
-                <element signature="e#9493#9519#0" expanded="true" />
-                <element signature="e#9749#9781#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#9726#9775#0" expanded="true" />
+                <element signature="e#10195#10210#0" expanded="true" />
+                <element signature="e#10287#10308#0" expanded="true" />
+                <element signature="e#10625#10651#0" expanded="true" />
+                <element signature="e#10881#10913#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -243,8 +242,8 @@
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/res/layout/main.xml" />
-        <option value="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" />
       </list>
     </option>
   </component>
@@ -494,7 +493,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.WIDTH" value="536" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
-    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="true" />
     <property name="LayoutCode.rearrangeEntriesXML" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/Documents/Patrick-Android-Keystore/Patrick.keystore" />
     <property name="ExportedModule" value="AndroidPercentageGadget" />
@@ -759,7 +758,7 @@
       <updated>1396129974635</updated>
       <workItem from="1396129983967" duration="131000" />
       <workItem from="1396130152241" duration="17785000" />
-      <workItem from="1396195240303" duration="2608000" />
+      <workItem from="1396195240303" duration="4532000" />
     </task>
     <task id="LOCAL-00001" summary="Improved the change logic, using text change listener instead of key event listener.">
       <created>1396138171601</created>
@@ -781,11 +780,15 @@
       <created>1396196024636</created>
       <updated>1396196024636</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed layout bug.&#10;Added number sentence at the bottom of the layout.">
+      <created>1396197888919</created>
+      <updated>1396197888919</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20524000" />
+    <option name="totallyTimeSpent" value="22448000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -819,10 +822,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329718" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3991323" sideWeight="0.4996877" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286334" sideWeight="0.5003123" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286334" sideWeight="0.5009369" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -892,11 +895,12 @@
     <MESSAGE value="Added animation to indicate computed value." />
     <MESSAGE value="Blanked out the indicator lights." />
     <MESSAGE value="Added License and README; Still working on layout problems." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added License and README; Still working on layout problems." />
+    <MESSAGE value="Fixed layout bug.&#10;Added number sentence at the bottom of the layout." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed layout bug.&#10;Added number sentence at the bottom of the layout." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -967,11 +971,12 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="5640">
           <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
           <folding>
-            <element signature="e#8594#8643#0" expanded="true" />
-            <element signature="e#9063#9078#0" expanded="true" />
-            <element signature="e#9155#9176#0" expanded="true" />
-            <element signature="e#9493#9519#0" expanded="true" />
-            <element signature="e#9749#9781#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#9726#9775#0" expanded="true" />
+            <element signature="e#10195#10210#0" expanded="true" />
+            <element signature="e#10287#10308#0" expanded="true" />
+            <element signature="e#10625#10651#0" expanded="true" />
+            <element signature="e#10881#10913#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1119,25 +1124,26 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java">
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="3801" max-vertical-offset="5310">
-          <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="16" />
-          <folding>
-            <element signature="e#8594#8643#0" expanded="true" />
-            <element signature="e#9063#9078#0" expanded="true" />
-            <element signature="e#9155#9176#0" expanded="true" />
-            <element signature="e#9493#9519#0" expanded="true" />
-            <element signature="e#9749#9781#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="315">
+          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+    <entry file="file://$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16157989" vertical-offset="0" max-vertical-offset="557">
-          <caret line="6" column="69" selection-start-line="6" selection-start-column="69" selection-end-line="6" selection-end-column="69" />
-          <folding />
+        <state vertical-scroll-proportion="0.29473683" vertical-offset="2037" max-vertical-offset="5895">
+          <caret line="147" column="0" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9726#9775#0" expanded="true" />
+            <element signature="e#10195#10210#0" expanded="true" />
+            <element signature="e#10287#10308#0" expanded="true" />
+            <element signature="e#10625#10651#0" expanded="true" />
+            <element signature="e#10881#10913#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

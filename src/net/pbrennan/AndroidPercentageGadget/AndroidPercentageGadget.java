@@ -12,7 +12,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 public class AndroidPercentageGadget 
@@ -23,7 +22,7 @@ public class AndroidPercentageGadget
     // A stack which maintains the LRU state of the fields.
     // m_modStack[0] == the last id modified by the user.
     // m_modStack[1] == the next to last.
-    private int m_modStack[];
+    private int m_modStack[] = new int[2];
 
     // m_targetedField is the id of the field which is
     // to be recomputed.
@@ -33,6 +32,21 @@ public class AndroidPercentageGadget
     // changed, so we will expect a text change event on this, the first incidence
     // of which we need to ignore.
     private boolean m_ignoreTargetedFieldChange = false;
+
+    // Variable names for saving state
+    private static final String STACK0_NAME = "stack0";
+    private static final String STACK1_NAME = "stack1";
+    private static final String TARGET_NAME = "targetedField";
+    private static final String IGNORE_FLAG_NAME = "ignoreFlag";
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt(STACK0_NAME, m_modStack[0]);
+        outState.putInt(STACK1_NAME, m_modStack[1]);
+        outState.putInt(TARGET_NAME, m_targetedField);
+        outState.putBoolean(IGNORE_FLAG_NAME, m_ignoreTargetedFieldChange);
+    }
 
     /**
      * Push a view id on to the mod stack, and select a new target view.
@@ -121,6 +135,18 @@ public class AndroidPercentageGadget
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+
+        if (savedInstanceState == null) {
+            m_ignoreTargetedFieldChange = false;
+            m_targetedField = 0;
+            m_modStack[0] = 0;
+            m_modStack[1] = 1;
+        } else {
+            m_ignoreTargetedFieldChange = savedInstanceState.getBoolean(IGNORE_FLAG_NAME);
+            m_targetedField = savedInstanceState.getInt(TARGET_NAME);
+            m_modStack[0] = savedInstanceState.getInt(STACK0_NAME);
+            m_modStack[1] = savedInstanceState.getInt(STACK1_NAME);
+        }
         
         // Set up the key listeners.
         TextView tv = (TextView)findViewById(R.id.PercentField);
