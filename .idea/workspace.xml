@@ -22,20 +22,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: net.pbrennan.AndroidPercentageGadget" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c9ad87fb-2080-4131-a90d-7c83cb51810e" name="Default" comment="Improved the change logic, using text change listener instead of key event listener.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/active.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/drawable/inactive.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/About.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/Help.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/about.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/layout/help.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" afterPath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/main.xml" afterPath="$PROJECT_DIR$/res/layout/main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="c9ad87fb-2080-4131-a90d-7c83cb51810e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidPercentageGadget.iws" />
@@ -119,10 +106,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="project.properties" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="project.properties" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/project.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="300">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13410">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -173,19 +170,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="375">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/about.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="240">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -641,12 +625,17 @@
       <created>1396129974635</created>
       <updated>1396129974635</updated>
       <workItem from="1396129983967" duration="131000" />
-      <workItem from="1396130152241" duration="8002000" />
+      <workItem from="1396130152241" duration="8024000" />
     </task>
+    <task id="LOCAL-00001" summary="Improved the change logic, using text change listener instead of key event listener.">
+      <created>1396138171601</created>
+      <updated>1396138171601</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8133000" />
+    <option name="totallyTimeSpent" value="8155000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -878,6 +867,14 @@
     <entry file="file://$PROJECT_DIR$/project.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="569">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="13410">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
