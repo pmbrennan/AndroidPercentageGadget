@@ -32,7 +32,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c9ad87fb-2080-4131-a90d-7c83cb51810e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" afterPath="$PROJECT_DIR$/src/net/pbrennan/AndroidPercentageGadget/AndroidPercentageGadget.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AndroidPercentageGadget.iws" />
@@ -758,7 +757,7 @@
       <updated>1396129974635</updated>
       <workItem from="1396129983967" duration="131000" />
       <workItem from="1396130152241" duration="17785000" />
-      <workItem from="1396195240303" duration="4532000" />
+      <workItem from="1396195240303" duration="4600000" />
     </task>
     <task id="LOCAL-00001" summary="Improved the change logic, using text change listener instead of key event listener.">
       <created>1396138171601</created>
@@ -784,11 +783,15 @@
       <created>1396197888919</created>
       <updated>1396197888919</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added save state code, first pass.">
+      <created>1396200876821</created>
+      <updated>1396200876821</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22448000" />
+    <option name="totallyTimeSpent" value="22516000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -896,7 +899,8 @@
     <MESSAGE value="Blanked out the indicator lights." />
     <MESSAGE value="Added License and README; Still working on layout problems." />
     <MESSAGE value="Fixed layout bug.&#10;Added number sentence at the bottom of the layout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed layout bug.&#10;Added number sentence at the bottom of the layout." />
+    <MESSAGE value="Added save state code, first pass." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added save state code, first pass." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
