@@ -22,11 +22,11 @@ public class AndroidPercentageGadget
     // A stack which maintains the LRU state of the fields.
     // m_modStack[0] == the last id modified by the user.
     // m_modStack[1] == the next to last.
-    private int m_modStack[] = new int[2];
+    private int m_modIdStack[] = new int[2];
 
     // m_targetedField is the id of the field which is
     // to be recomputed.
-    private int m_targetedField;
+    private int m_targetedFieldId;
 
     // m_ignoreTargetedFieldChange indicates that the targeted field has been
     // changed, so we will expect a text change event on this, the first incidence
@@ -39,12 +39,17 @@ public class AndroidPercentageGadget
     private static final String TARGET_NAME = "targetedField";
     private static final String IGNORE_FLAG_NAME = "ignoreFlag";
 
+    // Ids for the fields
+    private static final int ID_PERCENT_FIELD = 100;
+    private static final int ID_VALUE_FIELD = 200;
+    private static final int ID_PRODUCT_FIELD = 300;
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        outState.putInt(STACK0_NAME, m_modStack[0]);
-        outState.putInt(STACK1_NAME, m_modStack[1]);
-        outState.putInt(TARGET_NAME, m_targetedField);
+        outState.putInt(STACK0_NAME, m_modIdStack[0]);
+        outState.putInt(STACK1_NAME, m_modIdStack[1]);
+        outState.putInt(TARGET_NAME, m_targetedFieldId);
         outState.putBoolean(IGNORE_FLAG_NAME, m_ignoreTargetedFieldChange);
     }
 
@@ -55,79 +60,81 @@ public class AndroidPercentageGadget
      */
     private boolean pushViewId(int id) {
 
+        assert(id == ID_PERCENT_FIELD || id == ID_VALUE_FIELD || id == ID_PRODUCT_FIELD);
+
         // If the view being changed is the target view and the modify flag is set,
         // ignore.
-        if (m_ignoreTargetedFieldChange && id == m_targetedField) {
+        if (m_ignoreTargetedFieldChange && id == m_targetedFieldId) {
             m_ignoreTargetedFieldChange = false;
             return false;
         }
 
         // Write the stack changes.
-        if (id != m_modStack[0]) {
-            m_modStack[1] = m_modStack[0];
-            m_modStack[0] = id;
+        if (id != m_modIdStack[0]) {
+            m_modIdStack[1] = m_modIdStack[0];
+            m_modIdStack[0] = id;
         }
 
-        if (m_modStack[1] == 0) {
+        if (m_modIdStack[1] == 0) {
             return false;
         }
 
         // Now see if we can determine where we
         // are targeting the result of our calculation.
-        switch (m_modStack[0])
+        switch (m_modIdStack[0])
         {
-            case R.id.PercentField:
-                switch (m_modStack[1])
+            case ID_PERCENT_FIELD:
+                switch (m_modIdStack[1])
                 {
-                    case R.id.ValueField:
-                        m_targetedField = R.id.ProductField;
+                    case ID_VALUE_FIELD:
+                        m_targetedFieldId = ID_PRODUCT_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     case R.id.ProductField:
-                        m_targetedField = R.id.ValueField;
+                        m_targetedFieldId = ID_VALUE_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     default:
-                        m_targetedField = 0;
+                        m_targetedFieldId = 0;
                         break;
                 }
                 break;
             case R.id.ValueField:
-                switch (m_modStack[1])
+                switch (m_modIdStack[1])
                 {
                     case R.id.PercentField:
-                        m_targetedField = R.id.ProductField;
+                        m_targetedFieldId = ID_PRODUCT_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     case R.id.ProductField:
-                        m_targetedField = R.id.PercentField;
+                        m_targetedFieldId = ID_PERCENT_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     default:
-                        m_targetedField = 0;
+                        m_targetedFieldId = 0;
                         break;
                 }
                 break;
             case R.id.ProductField:
-                switch (m_modStack[1])
+                switch (m_modIdStack[1])
                 {
                     case R.id.ValueField:
-                        m_targetedField = R.id.PercentField;
+                        m_targetedFieldId = ID_PERCENT_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     case R.id.PercentField:
-                        m_targetedField = R.id.ValueField;
+                        m_targetedFieldId = ID_VALUE_FIELD;
                         m_ignoreTargetedFieldChange = true;
                         break;
                     default:
-                        m_targetedField = 0;
+                        m_targetedFieldId = 0;
                         break;
                 }
                 break;
             default:
                 break;
         }
-        return (m_targetedField != 0);
+        return (m_targetedFieldId != 0);
     }
 
     /** Called when the activity is first created. */
@@ -138,14 +145,14 @@ public class AndroidPercentageGadget
 
         if (savedInstanceState == null) {
             m_ignoreTargetedFieldChange = false;
-            m_targetedField = 0;
-            m_modStack[0] = 0;
-            m_modStack[1] = 1;
+            m_targetedFieldId = 0;
+            m_modIdStack[0] = 0;
+            m_modIdStack[1] = 0;
         } else {
             m_ignoreTargetedFieldChange = savedInstanceState.getBoolean(IGNORE_FLAG_NAME);
-            m_targetedField = savedInstanceState.getInt(TARGET_NAME);
-            m_modStack[0] = savedInstanceState.getInt(STACK0_NAME);
-            m_modStack[1] = savedInstanceState.getInt(STACK1_NAME);
+            m_targetedFieldId = savedInstanceState.getInt(TARGET_NAME);
+            m_modIdStack[0] = savedInstanceState.getInt(STACK0_NAME);
+            m_modIdStack[1] = savedInstanceState.getInt(STACK1_NAME);
         }
         
         // Set up the key listeners.
@@ -159,7 +166,7 @@ public class AndroidPercentageGadget
 
             @Override
             public void afterTextChanged(Editable s) {
-                onViewChanged(R.id.PercentField);
+                onViewChanged(ID_PERCENT_FIELD);
             }
         });
         
@@ -173,35 +180,33 @@ public class AndroidPercentageGadget
 
             @Override
             public void afterTextChanged(Editable s) {
-                onViewChanged(R.id.ValueField);
+                onViewChanged(ID_VALUE_FIELD);
             }
         });
         
         tv = (TextView)findViewById(R.id.ProductField);
         tv.addTextChangedListener(new TextWatcher() {
             @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+            }
 
             @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+            }
 
             @Override
             public void afterTextChanged(Editable s) {
-                onViewChanged(R.id.ProductField);
+                onViewChanged(ID_PRODUCT_FIELD);
             }
         });
-        
-        // Initialize the modStack. This will keep track of
-        // which fields have been touched. The last two fields
-        // modified by the user will determine which field changes.
-        m_modStack = new int[2];
-        m_modStack[0] = m_modStack[1] = 0;
-        
-        m_targetedField = 0;
-        FixResultIndicator();
     }
 
     private void onViewChanged(int viewid) {
+
+        int targetId = 0;
+
+        // TODO: Translate view id to a local id constant here.
+
         if (pushViewId(viewid)) {
             FixResultIndicator();
             DoComputation();
@@ -213,8 +218,22 @@ public class AndroidPercentageGadget
      */
 	private void FixResultIndicator()
 	{
-        TextView targetedView = (TextView)findViewById(m_targetedField);
-        addAnimation(targetedView);
+        int targetId = 0;
+        switch (m_targetedFieldId) {
+            case ID_PERCENT_FIELD:
+                targetId = R.id.PercentField;
+                break;
+            case ID_VALUE_FIELD:
+                targetId = R.id.ValueField;
+                break;
+            case ID_PRODUCT_FIELD:
+                targetId = R.id.ProductField;
+                break;
+        }
+        if (targetId != 0) {
+            TextView targetedView = (TextView) findViewById(targetId);
+            addAnimation(targetedView);
+        }
 	}
 
     /**
@@ -270,7 +289,7 @@ public class AndroidPercentageGadget
 			productOK = false;
 		}
 		
-		if (m_targetedField == R.id.ProductField)
+		if (m_targetedFieldId == ID_PRODUCT_FIELD)
 		{
 			if ((valueOK)&&(percentageOK))
 			{
@@ -283,7 +302,7 @@ public class AndroidPercentageGadget
 				productTextView.setText("");
 			}
 		}
-		else if (m_targetedField == R.id.PercentField)
+		else if (m_targetedFieldId == ID_PERCENT_FIELD)
 		{
 			if ((valueOK)&&(productOK))
 			{
@@ -296,7 +315,7 @@ public class AndroidPercentageGadget
 				percentageTextView.setText("");
 			}
 		}
-		else if (m_targetedField == R.id.ValueField)
+		else if (m_targetedFieldId == ID_VALUE_FIELD)
 		{
 			if ((percentageOK)&&(productOK))
 			{
