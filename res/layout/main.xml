@@ -6,28 +6,29 @@
               android:layout_gravity="top"
         >
 
-
     <TextView
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:text="@string/Explanation"
             android:singleLine="false"
             android:textStyle="normal"
             android:id="@+id/ExplanationLabel"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:padding="20dp"/>
 
     <TableLayout
             android:id="@+id/TableLayout_entryFields"
             android:layout_width="wrap_content"
-            android:stretchColumns="1"
-            android:layout_gravity="center_vertical"
+            android:stretchColumns="*"
+            android:layout_gravity="top"
             android:layout_weight="4"
-            android:layout_height="wrap_content">
+            android:layout_height="0dp">
 
         <TableRow
                 android:id="@+id/TableRow_percent_entry"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="0dp"
+                android:layout_weight="1">
 
             <EditText
                     android:layout_height="wrap_content"
@@ -52,8 +53,9 @@
 
         <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/TableRow_numberEntry">
+                android:layout_height="0dp"
+                android:id="@+id/TableRow_numberEntry"
+                android:layout_weight="1">
 
             <EditText
                     android:layout_width="0dp"
@@ -78,8 +80,9 @@
 
         <TableRow
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/TableRow_product_entry">
+                android:layout_height="0dp"
+                android:id="@+id/TableRow_product_entry"
+                android:layout_weight="1">
 
             <EditText
                     android:layout_width="0dp"
@@ -102,5 +105,14 @@
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:singleLine="false"
+            android:textStyle="normal"
+            android:id="@+id/CompleteEquation"
+            android:layout_weight="1"
+            android:padding="20dp"/>
 
 </LinearLayout>

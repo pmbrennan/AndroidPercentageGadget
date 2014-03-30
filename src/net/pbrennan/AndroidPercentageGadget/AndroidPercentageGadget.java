@@ -283,6 +283,19 @@ public class AndroidPercentageGadget
 				valueTextView.setText("");
 			}
 		}
+
+        TextView v = (TextView)findViewById(R.id.CompleteEquation);
+        String f = getResources().getString(R.string.EquationFormat);
+
+        if (v != null && f != null) {
+            String outValue = String.format(f, percentage, value, product);
+
+            if (percentageOK && productOK && valueOK) {
+                v.setText(outValue);
+            } else {
+                v.setText("");
+            }
+        }
 	}
 	
 	/** create the menu item(s) */

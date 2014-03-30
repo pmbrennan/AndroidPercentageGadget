@@ -4,6 +4,7 @@
     <string name="percentage_of">% of ...</string>
     <string name="of">of</string>
     <string name="equals">equals...</string>
+    <string name="EquationFormat" formatted="false">%.3f%% of %.3f = %.3f</string>
     <string name="Explanation">Enter numbers in any two of the three boxes and the third box will be calculated for you.</string>
     <string name="AboutThisApp">About...</string>
     <string name="HelpMe">Help!</string>
