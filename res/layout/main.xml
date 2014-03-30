@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
               android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_gravity="top"
         >
 
 
@@ -13,14 +14,14 @@
             android:singleLine="false"
             android:textStyle="normal"
             android:id="@+id/ExplanationLabel"
-            android:layout_weight="0.15"/>
+            android:layout_weight="1"/>
 
     <TableLayout
             android:id="@+id/TableLayout_entryFields"
             android:layout_width="wrap_content"
             android:stretchColumns="1"
             android:layout_gravity="center_vertical"
-            android:layout_weight="0.3"
+            android:layout_weight="4"
             android:layout_height="wrap_content">
 
         <TableRow
