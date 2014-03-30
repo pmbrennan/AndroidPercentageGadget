@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-        >
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
 
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, AndroidPercentageGadget"
-            />
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Explanation" android:singleLine="false" android:textStyle="normal" android:id="@+id/ExplanationLabel" android:layout_weight="0.15"></TextView><TableLayout android:id="@+id/TableLayout01" android:layout_width="wrap_content" android:stretchColumns="1" android:layout_gravity="center_vertical" android:layout_weight="0.3" android:layout_height="wrap_content"><TableRow android:id="@+id/TableRow01" android:layout_width="wrap_content" android:layout_height="wrap_content"><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/PercentTargeted" android:src="@drawable/active" android:clickable="false" android:longClickable="false"></ImageView><EditText android:layout_height="wrap_content" android:bufferType="editable" android:clickable="true" android:cursorVisible="true" android:numeric="signed|decimal" android:ems="8" android:editable="true" android:layout_width="wrap_content" android:id="@+id/PercentField"></EditText>
+<TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:text="@string/percentage_of"></TextView>
+
+
+
+
+</TableRow><TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TableRow02"><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/active" android:id="@+id/ValueTargeted" android:clickable="false" android:longClickable="false"></ImageView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:bufferType="editable" android:clickable="true" android:cursorVisible="true" android:numeric="signed|decimal" android:ems="8" android:editable="true" android:id="@+id/ValueField"></EditText><TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:text="@string/equals"></TextView></TableRow><TableRow android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/TableRow03"><ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/active" android:id="@+id/ProductTargeted" android:clickable="false" android:longClickable="false"></ImageView><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:bufferType="editable" android:clickable="true" android:cursorVisible="true" android:numeric="signed|decimal" android:ems="8" android:editable="true" android:id="@+id/ProductField"></EditText></TableRow>
+
+</TableLayout>
+
 </LinearLayout>
-

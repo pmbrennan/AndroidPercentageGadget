@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:orientation="vertical">
+
+
+<TextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.1" android:id="@+id/AboutLabel" android:text="@string/AboutLabelText"></TextView><TextView android:layout_height="wrap_content" android:singleLine="false" android:textStyle="normal" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/AboutLabel"></TextView>
+
+<Button android:id="@+id/ButtonOK" android:text="OK" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_weight="0.025"></Button>
+</LinearLayout>

@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">AndroidPercentageGadget</string>
+<resources>    
+    <string name="app_name">PercentageGadget</string>
+    <string name="percentage_of">% of ...</string>
+    <string name="of">of</string>
+    <string name="equals">equals...</string>
+    <string name="Explanation">Enter numbers in any two of the three boxes and the third box will be calculated for you.</string>
+    <string name="AboutThisApp">About...</string>
+    <string name="HelpMe">Help!</string>
+    <string name="HelpLabelText">PercentageGadget Help</string>
+    <string name="LongerExplanation">This gadget was created at the suggestion of my wife, who used to be in the habit of calling/emailing/messaging me several times a day with questions in the form of: &quot;What percent of A is B?&quot; or &quot;X% of what number is Y?&quot;  I always answer her, of course, but I thought it would be so much more convenient for her to have this application handy on her G-phone.  After all, I am not always there.  Now, a little bit of me is always there with her.  Also this gadget.\n\nTo use the gadget, enter values in any two of the three boxes.  The correct value will be computed for the third box, and the gadget will show you the newly computed value.  The gadget remembers the last two boxes you modified, and puts a new value in the remaining box.</string>
+    <string name="AboutLabelText">About PercentageGadget</string>
+    <string name="AboutText">PercentageGadget\nv%s\n\nby Patrick M Brennan\nCopyright © 2014\n\nDedicated to my wife, Alyssa.</string>
 </resources>
